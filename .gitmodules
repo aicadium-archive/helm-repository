@@ -1,5 +1,5 @@
 [submodule "charts/consul-helm"]
-	path = charts/consul-helm
+	path = charts/consul
 	url = https://github.com/basisai/consul-helm.git
 [submodule "charts/traefik"]
 	path = charts/traefik
