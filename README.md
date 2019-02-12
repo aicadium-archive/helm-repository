@@ -14,16 +14,17 @@ Add the repository using `helm`:
 helm repo add amoy https://charts.amoy.ai
 ```
 
-## Packaging
+## Packaging and indexing
 
 ```bash
+git checkout --orphan gh-pages
 helm package charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault
-```
+helm repo index ./ --url https://charts.amoy.ai
 
-Move all the tarballs to `docs`.
+rm -rf charts .gitmodules LICENSE README.md
 
-## Generating Index
+git add .
+git commit -m "Update index"
 
-```bash
-helm repo index docs --url https://charts.amoy.ai
+git push -u origin gh-pages --force
 ```
