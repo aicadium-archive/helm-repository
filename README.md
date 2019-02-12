@@ -6,6 +6,14 @@ method.
 
 You can find the charts at `charts.amoy.ai`.
 
+## Usage
+
+Add the repository using `helm`:
+
+```bash
+helm repo add amoy https://charts.amoy.ai
+```
+
 ## Packaging
 
 ```bash
