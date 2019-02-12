@@ -17,8 +17,9 @@ helm repo add amoy https://charts.amoy.ai
 ## Packaging and indexing
 
 ```bash
-git checkout --orphan gh-pages
+git branch -D gh-pages
 helm package charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault
+git checkout --force --orphan gh-pages
 helm repo index ./ --url https://charts.amoy.ai
 
 rm -rf charts .gitmodules LICENSE README.md
