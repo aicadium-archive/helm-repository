@@ -1,0 +1,38 @@
+language: bash
+
+env:
+  global:
+    - HELM_VERSION="2.12.3"
+    - TARGET="gh-pages"
+    - DOMAIN=charts.amoy.ai
+    - REPO="https://${DOMAIN}"
+    - CHARTS="charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault"
+
+install:
+  - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
+  - tar xzfv helm-v${HELM_VERSION}-linux-amd64.tar.gz
+  - PATH=`pwd`/linux-amd64/:$PATH
+  - helm init --client-only
+
+script:
+  - helm package ${CHARTS}
+  - helm repo index ./ --url "${CHARTS}"
+  - rm -rf charts .gitmodules
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  target-branch: "${TARGET}"
+  fqdn: ${DOMAIN}
+  committer-from-gh: true
+  github-token: $GITHUB_TOKEN  # Secure variable
+  keep-history: true
+  on:
+    branch: master
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
