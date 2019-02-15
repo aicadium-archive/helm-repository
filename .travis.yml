@@ -10,7 +10,7 @@ env:
 
 install:
   - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
-  - tar xzfv ${HELM_TGZ}
+  - tar xzfv helm-v${HELM_VERSION}-linux-amd64.tar.gz
   - PATH=`pwd`/linux-amd64/:$PATH
   - helm init --client-only
 
