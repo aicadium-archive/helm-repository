@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-02-15T03:13:00.021720821Z
+    created: 2019-02-15T03:16:10.815793775Z
     description: Install and configure Consul on Kubernetes.
-    digest: badef9e2dc27ead5c1f0dc6158a033c9ac370901f410346b3287135fb85c25be
+    digest: 59fdb1e7917f43ea1ab1191a14006a081bf2ab408f765e0639360832ef57e96f
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,10 +17,10 @@ entries:
   traefik:
   - apiVersion: v1
     appVersion: 1.7.7
-    created: 2019-02-15T03:13:00.023826208Z
+    created: 2019-02-15T03:16:10.818070759Z
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
-    digest: 85b9b003216c4c1406182634c978dcf976dde9628fd6c6ca6f0654945be575c3
+    digest: 6c4122244dff5eaa4084bae50d637c274fdf7c63086ac89efc26d4c9055e34e1
     engine: gotpl
     home: https://traefik.io/
     icon: http://traefik.io/traefik.logo.png
@@ -48,9 +48,9 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-02-15T03:13:00.024730601Z
+    created: 2019-02-15T03:16:10.819000814Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: 4ce228d143e71268e6a3b0a87c032504e434b872eec21eec3a05fdf6aae5ce20
+    digest: e061f2f2fc953e2e8aa35eda9c4bfbf66bf5db03133a12f692c96c6f68b91a52
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -63,4 +63,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.14.8.tgz
     version: 0.14.8
-generated: 2019-02-15T03:13:00.019708746Z
+generated: 2019-02-15T03:16:10.81455699Z
