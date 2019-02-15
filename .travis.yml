@@ -1,0 +1,32 @@
+language: bash
+sudo: true
+
+env:
+  global:
+    - HELM_VERSION="2.12.3"
+    - TARGET="gh-pages"
+    - REPO="https://charts.amoy.ai"
+    - CHARTS="charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault"
+
+install:
+  - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
+  - tar xzfv ${HELM_TGZ}
+  - PATH=`pwd`/linux-amd64/:$PATH
+  - helm init --client-only
+
+script:
+  - git branch -D "${TARGET}"
+  - helm package ${CHARTS}
+  - git checkout --force --orphan "${TARGET}"
+  - helm repo index ./ --url "${CHARTS}"
+  - rm -rf charts .gitmodules .git
+  - git add .
+  - git commit -m "Update Helm Repository $(date --iso-8601=seconds)"
+  - git push -u origin gh-pages --force
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
