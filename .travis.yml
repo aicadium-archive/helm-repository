@@ -1,11 +1,11 @@
 language: bash
-sudo: true
 
 env:
   global:
     - HELM_VERSION="2.12.3"
     - TARGET="gh-pages"
-    - REPO="https://charts.amoy.ai"
+    - DOMAIN=charts.amoy.ai
+    - REPO="https://${DOMAIN}"
     - CHARTS="charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault"
 
 install:
@@ -19,10 +19,18 @@ script:
   - helm package ${CHARTS}
   - git checkout --force --orphan "${TARGET}"
   - helm repo index ./ --url "${CHARTS}"
-  - rm -rf charts .gitmodules .git
-  - git add .
-  - git commit -m "Update Helm Repository $(date --iso-8601=seconds)"
-  - git push -u origin gh-pages --force
+  - rm -rf charts .gitmodules
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  target-branch: "${TARGET}"
+  fqdn: ${DOMAIN}
+  committer-from-gh: true
+  github-token: $GITHUB_TOKEN  # Secure variable
+  keep-history: true
+  on:
+    branch: master
 
 branches:
   only:
