@@ -16,8 +16,8 @@ install:
 
 script:
   - helm package ${CHARTS}
-  - helm repo index ./ --url "${CHARTS}"
-  - rm -rf charts .gitmodules
+  - helm repo index ./ --url "${REPO}"
+  - rm -rf charts .gitmodules linux-amd64
 
 deploy:
   provider: pages

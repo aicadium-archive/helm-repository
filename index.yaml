@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-02-15T03:07:39.736932611Z
+    created: 2019-02-15T03:13:00.021720821Z
     description: Install and configure Consul on Kubernetes.
-    digest: 699629b2cb135419f764eab908636a658e5d1dc5125afc65eea9bdd81bd88519
+    digest: badef9e2dc27ead5c1f0dc6158a033c9ac370901f410346b3287135fb85c25be
     home: https://www.consul.io
     name: consul
     sources:
@@ -12,15 +12,15 @@ entries:
     - https://github.com/hashicorp/consul-helm
     - https://github.com/hashicorp/consul-k8s
     urls:
-    - charts/consul%20charts/traefik/stable/traefik%20charts/vault/incubator/vault/consul-0.6.0.tgz
+    - https://charts.amoy.ai/consul-0.6.0.tgz
     version: 0.6.0
   traefik:
   - apiVersion: v1
     appVersion: 1.7.7
-    created: 2019-02-15T03:07:39.739121181Z
+    created: 2019-02-15T03:13:00.023826208Z
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
-    digest: 64ea77aecc38dbaf1bf56e85777375982e00ec5bf0c5ae8ee6942be7f913f66f
+    digest: 85b9b003216c4c1406182634c978dcf976dde9628fd6c6ca6f0654945be575c3
     engine: gotpl
     home: https://traefik.io/
     icon: http://traefik.io/traefik.logo.png
@@ -43,14 +43,14 @@ entries:
     - https://github.com/containous/traefik
     - https://github.com/helm/charts/tree/master/stable/traefik
     urls:
-    - charts/consul%20charts/traefik/stable/traefik%20charts/vault/incubator/vault/traefik-1.59.3.tgz
+    - https://charts.amoy.ai/traefik-1.59.3.tgz
     version: 1.59.3
   vault:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-02-15T03:07:39.740011501Z
+    created: 2019-02-15T03:13:00.024730601Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: ca78ae0726b4ff880e9e39e01923695254041a7e3837e9aa77408959ece0eef4
+    digest: 4ce228d143e71268e6a3b0a87c032504e434b872eec21eec3a05fdf6aae5ce20
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -61,6 +61,6 @@ entries:
     - https://github.com/hashicorp/vault
     - https://github.com/hashicorp/docker-vault
     urls:
-    - charts/consul%20charts/traefik/stable/traefik%20charts/vault/incubator/vault/vault-0.14.8.tgz
+    - https://charts.amoy.ai/vault-0.14.8.tgz
     version: 0.14.8
-generated: 2019-02-15T03:07:39.735008272Z
+generated: 2019-02-15T03:13:00.019708746Z
