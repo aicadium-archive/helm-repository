@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-02-15T03:16:10.815793775Z
+    created: 2019-02-15T04:51:33.699564982Z
     description: Install and configure Consul on Kubernetes.
-    digest: 59fdb1e7917f43ea1ab1191a14006a081bf2ab408f765e0639360832ef57e96f
+    digest: abb676e2355c2020309d525297bd86f605752f4fca3e6916d7b471117bbf1e4e
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,10 +17,10 @@ entries:
   traefik:
   - apiVersion: v1
     appVersion: 1.7.7
-    created: 2019-02-15T03:16:10.818070759Z
+    created: 2019-02-15T04:51:33.700788033Z
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
-    digest: 6c4122244dff5eaa4084bae50d637c274fdf7c63086ac89efc26d4c9055e34e1
+    digest: e92d6513d5ca7a6c937163c6339d13009ca3f073149f80e503570b6d328d5e61
     engine: gotpl
     home: https://traefik.io/
     icon: http://traefik.io/traefik.logo.png
@@ -48,9 +48,9 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-02-15T03:16:10.819000814Z
+    created: 2019-02-15T04:51:33.701926854Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: e061f2f2fc953e2e8aa35eda9c4bfbf66bf5db03133a12f692c96c6f68b91a52
+    digest: bba3588a4788c9c38979911fc267302bd11da070eab59636a4b2a439ce060587
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -61,6 +61,6 @@ entries:
     - https://github.com/hashicorp/vault
     - https://github.com/hashicorp/docker-vault
     urls:
-    - https://charts.amoy.ai/vault-0.14.8.tgz
-    version: 0.14.8
-generated: 2019-02-15T03:16:10.81455699Z
+    - https://charts.amoy.ai/vault-0.14.9.tgz
+    version: 0.14.9
+generated: 2019-02-15T04:51:33.69829935Z
