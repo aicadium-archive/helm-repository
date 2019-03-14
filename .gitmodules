@@ -1,9 +1,6 @@
 [submodule "charts/consul-helm"]
 	path = charts/consul
 	url = https://github.com/basisai/consul-helm.git
-[submodule "charts/traefik"]
-	path = charts/traefik
-	url = https://github.com/basisai/charts.git
 [submodule "charts/vault"]
 	path = charts/vault
 	url = https://github.com/basisai/charts.git
