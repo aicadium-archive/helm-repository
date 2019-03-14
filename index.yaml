@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-02-15T05:11:49.818368121Z
+    created: 2019-03-14T04:16:36.930422338Z
     description: Install and configure Consul on Kubernetes.
-    digest: 778a9d8c6108003a488b3866c88e7f91ad06b8068a20d78ffe320b8bede0d93d
+    digest: 4f0ef580cf57eac0771cf5923fa87d9ed0b82f0f1273e6cb6584a0709855d9a0
     home: https://www.consul.io
     name: consul
     sources:
@@ -14,43 +14,23 @@ entries:
     urls:
     - https://charts.amoy.ai/consul-0.6.0.tgz
     version: 0.6.0
-  traefik:
+  consul-backup-gcs:
   - apiVersion: v1
-    appVersion: 1.7.7
-    created: 2019-02-15T05:11:49.820398082Z
-    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
-      support
-    digest: 243750f2328a4a31f889d919a4042074f72b8331550e858ea4f960e566bcf230
-    engine: gotpl
-    home: https://traefik.io/
-    icon: http://traefik.io/traefik.logo.png
-    keywords:
-    - traefik
-    - ingress
-    - acme
-    - letsencrypt
-    maintainers:
-    - email: kent.rancourt@microsoft.com
-      name: krancour
-    - email: emile@vauge.com
-      name: emilevauge
-    - email: daniel.tomcej@gmail.com
-      name: dtomcej
-    - email: ludovic@containo.us
-      name: ldez
-    name: traefik
-    sources:
-    - https://github.com/containous/traefik
-    - https://github.com/helm/charts/tree/master/stable/traefik
+    appVersion: 0.1.0
+    created: 2019-03-14T04:16:36.931404895Z
+    description: Backup Consul Snapshots to GCS using credentials from Vault
+    digest: 12fd89afc6a51ee342b3f5aa1e18d14d8562e5c7d663842a4d24c541d8026401
+    home: https://github.com/basisai/consul-backup-gcs
+    name: consul-backup-gcs
     urls:
-    - https://charts.amoy.ai/traefik-1.59.3.tgz
-    version: 1.59.3
+    - https://charts.amoy.ai/consul-backup-gcs-0.1.0.tgz
+    version: 0.1.0
   vault:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: 2019-02-15T05:11:49.82135646Z
+    created: 2019-03-14T04:16:36.932331922Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: 1a2e8d3192bbcb26243e9d439ebc809378078c4cba7d9ad0a9e28a9d2688fac9
+    digest: 47aa644403a77fd5ea8a8af24a316fe8467a0029a75c44c2b84ff825d3861d33
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -63,4 +43,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.14.10.tgz
     version: 0.14.10
-generated: 2019-02-15T05:11:49.816446194Z
+generated: 2019-03-14T04:16:36.929152527Z
