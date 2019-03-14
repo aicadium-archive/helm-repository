@@ -7,3 +7,6 @@
 [submodule "charts/vault"]
 	path = charts/vault
 	url = https://github.com/basisai/charts.git
+[submodule "charts/consul-backup-gcs"]
+	path = charts/consul-backup-gcs
+	url = https://github.com/basisai/consul-backup-gcs.git

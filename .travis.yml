@@ -6,7 +6,7 @@ env:
     - TARGET="gh-pages"
     - DOMAIN=charts.amoy.ai
     - REPO="https://${DOMAIN}"
-    - CHARTS="charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault"
+    - CHARTS="charts/consul charts/vault/incubator/vault charts/consul-backup-gcs/consul-backup-gcs"
 
 install:
   - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
