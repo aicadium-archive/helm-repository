@@ -7,3 +7,6 @@
 [submodule "charts/consul-backup-gcs"]
 	path = charts/consul-backup-gcs
 	url = https://github.com/basisai/consul-backup-gcs.git
+[submodule "charts/gcloud-cron"]
+	path = charts/gcloud-cron
+	url = https://github.com/basisai/gcloud-cron.git
