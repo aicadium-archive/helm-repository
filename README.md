@@ -18,7 +18,7 @@ helm repo add amoy https://charts.amoy.ai
 
 ```bash
 git branch -D gh-pages
-helm package charts/consul charts/traefik/stable/traefik charts/vault/incubator/vault
+helm package charts/consul charts/consul-backup-gcs/consul-backup-gcs charts/gcloud-cron/gcloud-cron
 git checkout --force --orphan gh-pages
 helm repo index ./ --url https://charts.amoy.ai
 

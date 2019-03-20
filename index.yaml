@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-03-14T04:16:36.930422338Z
+    created: 2019-03-20T07:07:59.948897014Z
     description: Install and configure Consul on Kubernetes.
-    digest: 4f0ef580cf57eac0771cf5923fa87d9ed0b82f0f1273e6cb6584a0709855d9a0
+    digest: f596a4fd8b9c7c733d932d83746e35eb96682218b73e7638746adb906dd1cab7
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,30 +17,23 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-14T04:16:36.931404895Z
+    created: 2019-03-20T07:07:59.949446172Z
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: 12fd89afc6a51ee342b3f5aa1e18d14d8562e5c7d663842a4d24c541d8026401
+    digest: c387be41408418fd708d50dc9ef450e431acc5f8159954880458a7faa4cf6e0c
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
     - https://charts.amoy.ai/consul-backup-gcs-0.1.0.tgz
     version: 0.1.0
-  vault:
+  gcloud-cron:
   - apiVersion: v1
-    appVersion: 1.0.1
-    created: 2019-03-14T04:16:36.932331922Z
-    description: A Helm chart for Vault, a tool for managing secrets
-    digest: 47aa644403a77fd5ea8a8af24a316fe8467a0029a75c44c2b84ff825d3861d33
-    home: https://www.vaultproject.io/
-    icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
-    maintainers:
-    - email: jpds@protonmail.com
-      name: jpds
-    name: vault
-    sources:
-    - https://github.com/hashicorp/vault
-    - https://github.com/hashicorp/docker-vault
+    appVersion: 0.1.0
+    created: 2019-03-20T07:07:59.949907413Z
+    description: gcloud Cron job
+    digest: 74bc6107077f9acf5c552d1c1934a3779798f9e17d68281d6ab6f68b425d2ae4
+    home: https://github.com/basisai/gcloud-cron
+    name: gcloud-cron
     urls:
-    - https://charts.amoy.ai/vault-0.14.10.tgz
-    version: 0.14.10
-generated: 2019-03-14T04:16:36.929152527Z
+    - https://charts.amoy.ai/gcloud-cron-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-03-20T07:07:59.946325297Z
