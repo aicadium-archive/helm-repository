@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-03-26T04:48:11.615014251Z
+    created: 2019-04-05T08:14:46.728733617Z
     description: Install and configure Consul on Kubernetes.
-    digest: 627afca919db856e7f949fa3322a4d9ea27eaee435e39c770bde1cb63d9e9120
+    digest: 3e1606725b4d7fc4c8c710cb0652e349fde837a8dc182b0484ce4ddba2ff9416
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,23 +17,23 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-26T04:48:11.615518026Z
+    created: 2019-04-05T08:14:46.729275574Z
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: 3d8b1e5938bd2151f6df8721e70b90bb5799ca3f6354349a90b83d7cb0bfd921
+    digest: 99ac23a8ecff35293ea96edc83d270a2a3bca6c2f20dfcffc1670082e3c2150c
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
-    - https://charts.amoy.ai/consul-backup-gcs-0.1.0.tgz
-    version: 0.1.0
+    - https://charts.amoy.ai/consul-backup-gcs-0.1.1.tgz
+    version: 0.1.1
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-26T04:48:11.615985427Z
+    created: 2019-04-05T08:14:46.729764561Z
     description: gcloud Cron job
-    digest: c8fe4c927bca086d3cb7a6a34bb33c6128fdae25a2143accf4618ae90ca7cd6c
+    digest: 472cc91e11cc363b15a7f770fd6e6632dccd4b55349e26ef68e09a087d6b75bf
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
-    - https://charts.amoy.ai/gcloud-cron-0.1.0.tgz
-    version: 0.1.0
-generated: 2019-03-26T04:48:11.613055888Z
+    - https://charts.amoy.ai/gcloud-cron-0.1.1.tgz
+    version: 0.1.1
+generated: 2019-04-05T08:14:46.726282429Z
