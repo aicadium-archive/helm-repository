@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-04-05T08:14:46.728733617Z
+    created: 2019-04-16T08:37:12.424917111Z
     description: Install and configure Consul on Kubernetes.
-    digest: 3e1606725b4d7fc4c8c710cb0652e349fde837a8dc182b0484ce4ddba2ff9416
+    digest: 70c04e5c7c5321d714b2555dfcc76b841f8b0922f35ced72b2c038d9131d5346
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,9 +17,9 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-04-05T08:14:46.729275574Z
+    created: 2019-04-16T08:37:12.425206881Z
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: 99ac23a8ecff35293ea96edc83d270a2a3bca6c2f20dfcffc1670082e3c2150c
+    digest: b1f53acd180af76f51d79d3d92ba4d4a01590d701518f1045db5cf0f8c62be2f
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -28,12 +28,30 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-04-05T08:14:46.729764561Z
+    created: 2019-04-16T08:37:12.425458776Z
     description: gcloud Cron job
-    digest: 472cc91e11cc363b15a7f770fd6e6632dccd4b55349e26ef68e09a087d6b75bf
+    digest: ef3550b3ef6e682d579cdd7803c6f5dd51e931e3219387f2b67234deca26caa3
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
     - https://charts.amoy.ai/gcloud-cron-0.1.1.tgz
     version: 0.1.1
-generated: 2019-04-05T08:14:46.726282429Z
+  vault:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: 2019-04-16T08:37:12.426025511Z
+    description: A Helm chart for Vault, a tool for managing secrets
+    digest: fed02cb94244de4252c34913c79efc28ca9f011499b04985d9a1703b58263f99
+    home: https://www.vaultproject.io/
+    icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
+    maintainers:
+    - email: jpds@protonmail.com
+      name: jpds
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/docker-vault
+    urls:
+    - https://charts.amoy.ai/vault-0.16.2.tgz
+    version: 0.16.2
+generated: 2019-04-16T08:37:12.423364901Z
