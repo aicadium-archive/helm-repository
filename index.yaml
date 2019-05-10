@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-04-16T08:37:12.424917111Z
+    created: 2019-05-10T05:03:05.595510598Z
     description: Install and configure Consul on Kubernetes.
-    digest: 70c04e5c7c5321d714b2555dfcc76b841f8b0922f35ced72b2c038d9131d5346
+    digest: 7b6db0a75da3a263bc28b78e01c730e40dda091cb7cdeeb2720eac41888c892c
     home: https://www.consul.io
     name: consul
     sources:
@@ -12,14 +12,14 @@ entries:
     - https://github.com/hashicorp/consul-helm
     - https://github.com/hashicorp/consul-k8s
     urls:
-    - https://charts.amoy.ai/consul-0.7.0.tgz
-    version: 0.7.0
+    - https://charts.amoy.ai/consul-0.8.1.tgz
+    version: 0.8.1
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-04-16T08:37:12.425206881Z
+    created: 2019-05-10T05:03:05.596120342Z
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: b1f53acd180af76f51d79d3d92ba4d4a01590d701518f1045db5cf0f8c62be2f
+    digest: e796aee91e1e30f1f64e515ce71ca396f8ccb0038eecb106b1fd5724f9c516ae
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -28,9 +28,9 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-04-16T08:37:12.425458776Z
+    created: 2019-05-10T05:03:05.596588772Z
     description: gcloud Cron job
-    digest: ef3550b3ef6e682d579cdd7803c6f5dd51e931e3219387f2b67234deca26caa3
+    digest: 9c7226b199dd474ea5df1c167b70341222adacc1ff9498e4df91f8ab46a82f28
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
@@ -38,10 +38,10 @@ entries:
     version: 0.1.1
   vault:
   - apiVersion: v1
-    appVersion: 1.1.0
-    created: 2019-04-16T08:37:12.426025511Z
+    appVersion: 1.1.2
+    created: 2019-05-10T05:03:05.59765489Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: fed02cb94244de4252c34913c79efc28ca9f011499b04985d9a1703b58263f99
+    digest: 909f7ffc4fa6d66d135bf261e53bdfdaee1459bf1c2e7dc30090389b86521751
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -52,6 +52,6 @@ entries:
     - https://github.com/hashicorp/vault
     - https://github.com/hashicorp/docker-vault
     urls:
-    - https://charts.amoy.ai/vault-0.16.2.tgz
-    version: 0.16.2
-generated: 2019-04-16T08:37:12.423364901Z
+    - https://charts.amoy.ai/vault-0.18.7.tgz
+    version: 0.18.7
+generated: 2019-05-10T05:03:05.5934752Z
