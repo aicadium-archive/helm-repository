@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: 2019-05-10T05:03:05.595510598Z
+    created: 2019-05-14T02:05:39.922957223Z
     description: Install and configure Consul on Kubernetes.
-    digest: 7b6db0a75da3a263bc28b78e01c730e40dda091cb7cdeeb2720eac41888c892c
+    digest: 64cae516ea76212ecf04ff48f664af6252f6eb37d63e7a9e932afbd6d67a6aeb
     home: https://www.consul.io
     name: consul
     sources:
@@ -12,14 +12,14 @@ entries:
     - https://github.com/hashicorp/consul-helm
     - https://github.com/hashicorp/consul-k8s
     urls:
-    - https://charts.amoy.ai/consul-0.8.1.tgz
-    version: 0.8.1
+    - https://charts.amoy.ai/consul-0.7.0.tgz
+    version: 0.7.0
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-05-10T05:03:05.596120342Z
+    created: 2019-05-14T02:05:39.923227815Z
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: e796aee91e1e30f1f64e515ce71ca396f8ccb0038eecb106b1fd5724f9c516ae
+    digest: 5641542892db9f79432058fe0e6bfdad3671986d780741b6608feedc491f6167
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -28,9 +28,9 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-05-10T05:03:05.596588772Z
+    created: 2019-05-14T02:05:39.924043613Z
     description: gcloud Cron job
-    digest: 9c7226b199dd474ea5df1c167b70341222adacc1ff9498e4df91f8ab46a82f28
+    digest: 95233453a05ca211cdb07056eacaf6181123164253bc6c566b7b48b994dfcdd7
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
@@ -39,9 +39,9 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: 2019-05-10T05:03:05.59765489Z
+    created: 2019-05-14T02:05:39.925079496Z
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: 909f7ffc4fa6d66d135bf261e53bdfdaee1459bf1c2e7dc30090389b86521751
+    digest: 461e06af8573b6c85e1d6c8ab8a2fd96fe7a954d3c551b116347af775ce2eb90
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -54,4 +54,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.18.7.tgz
     version: 0.18.7
-generated: 2019-05-10T05:03:05.5934752Z
+generated: 2019-05-14T02:05:39.921449466Z
