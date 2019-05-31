@@ -10,3 +10,6 @@
 [submodule "charts/consul"]
 	path = charts/consul
 	url = https://github.com/hashicorp/consul-helm.git
+[submodule "charts/basisai"]
+	path = charts/basisai
+	url = https://github.com/basisai/charts
