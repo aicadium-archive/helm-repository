@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: "2019-05-31T02:29:46.250356088Z"
+    created: "2019-06-19T06:43:59.777768173Z"
     description: Install and configure Consul on Kubernetes.
-    digest: 5fae3e39d67a887bdee59af220d3ed2fa9ad149e5a6fbe9232bddf150fbfbbef
+    digest: 245fcb381b95cf4d98e109e6d0c53e31e50c66ec51490d52e187d9fe90023c92
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,9 +17,9 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-05-31T02:29:46.250855177Z"
+    created: "2019-06-19T06:43:59.778076765Z"
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: 173d7123c46708e4416f2820aad1bd47c626c21348c4fa8943fd1676d84ba1da
+    digest: 12e2fd7f6f08ac1d8772b2354010a554e17424fb2490090af65eb7837274d254
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -28,9 +28,9 @@ entries:
   consul-esm:
   - apiVersion: v1
     appVersion: 0.3.3
-    created: "2019-05-31T02:29:46.251428846Z"
+    created: "2019-06-19T06:43:59.779043942Z"
     description: Consul ESM for external service health checks in Consul
-    digest: 2b2faa6abc7338c83083d3bb7bc07cfadc4a2d2afc4446dab594494a7daeb420
+    digest: 59b6aade6685c01dba56b5adb13a85a4dbbbbe262822d55e6344a92e0af2cde9
     home: https://github.com/hashicorp/consul-esm
     name: consul-esm
     urls:
@@ -39,20 +39,37 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-05-31T02:29:46.251919486Z"
+    created: "2019-06-19T06:43:59.779560853Z"
     description: gcloud Cron job
-    digest: 5ded5b0ce1133849a26d1121c5c67f3b7a98f2321a4b8bde50a88da527e62e1b
+    digest: 61065a885b14fda7242da4ef45298352a785d2877345052ad21df0a0ced7efc7
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
     - https://charts.amoy.ai/gcloud-cron-0.1.1.tgz
     version: 0.1.1
+  telegraf:
+  - appVersion: "1.9"
+    created: "2019-06-19T06:43:59.780275907Z"
+    description: Telegraf is an agent written in Go for collecting, processing, aggregating,
+      and writing metrics.
+    digest: 51d54a906824db2e258b5de953f9550627f2cd02ca211d878384baea788dc778
+    engine: gotpl
+    home: https://www.influxdata.com/time-series-platform/telegraf/
+    keywords:
+    - telegraf
+    - collector
+    - timeseries
+    - influxdata
+    name: telegraf
+    urls:
+    - https://charts.amoy.ai/telegraf-1.1.0.tgz
+    version: 1.1.0
   vault:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2019-05-31T02:29:46.252709454Z"
+    created: "2019-06-19T06:43:59.781428277Z"
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: 268209b10ac67fcefd6ec50cdde7c9a76946fa1575c2bae79de6686bb5ea3a0f
+    digest: 8fc34bf58e0f6a4774a7550932e107b94390685eb5a27c9440ba4be9eb001483
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -65,4 +82,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.18.7.tgz
     version: 0.18.7
-generated: "2019-05-31T02:29:46.247455405Z"
+generated: "2019-06-19T06:43:59.776048687Z"
