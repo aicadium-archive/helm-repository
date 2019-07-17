@@ -13,3 +13,7 @@
 [submodule "charts/basisai"]
 	path = charts/basisai
 	url = https://github.com/basisai/charts
+[submodule "charts/fluent-bit"]
+	path = charts/fluent-bit
+	url = https://github.com/basisai/helm-charts.git
+	branch = fluentbit-stackdriver-backend
