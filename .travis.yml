@@ -6,7 +6,7 @@ env:
     - TARGET="gh-pages"
     - DOMAIN=charts.amoy.ai
     - REPO="https://${DOMAIN}"
-    - CHARTS="charts/consul charts/consul-backup-gcs/consul-backup-gcs charts/gcloud-cron/gcloud-cron charts/vault/incubator/vault charts/basisai/consul-esm charts/basisai/telegraf"
+    - CHARTS="charts/consul charts/consul-backup-gcs/consul-backup-gcs charts/gcloud-cron/gcloud-cron charts/vault/incubator/vault charts/basisai/consul-esm charts/basisai/telegraf charts/fluent-bit/stable/fluent-bit"
 
 install:
   - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
