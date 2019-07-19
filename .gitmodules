@@ -19,4 +19,4 @@
 	branch = fluentbit-stackdriver-backend
 [submodule "charts/kube-janitor-helm"]
 	path = charts/kube-janitor-helm
-	url = git@github.com:basisai/kube-janitor-helm.git
+	url = https://github.com/basisai/kube-janitor-helm.git
