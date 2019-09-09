@@ -20,3 +20,7 @@
 [submodule "charts/kube-janitor"]
 	path = charts/kube-janitor
 	url = https://github.com/basisai/kube-janitor-helm.git
+[submodule "charts/bulldozer-deployment"]
+	path = charts/bulldozer-deployment
+	url = https://github.com/basisai/bulldozer-deployment
+	branch = master
