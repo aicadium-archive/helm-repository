@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    created: "2019-08-29T02:00:00.205501553Z"
+    created: "2019-09-09T07:29:17.762517375Z"
     description: Install and configure Consul on Kubernetes.
-    digest: d607bc5845ce2e3aa805206fccb6271a4e766254268cf88d771fec6063ad18af
+    digest: 272773f6b675aebf106eb53a351a1d436d9449f3c6b60ec61210fd09d3c689e8
     home: https://www.consul.io
     name: consul
     sources:
@@ -17,9 +17,9 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-08-29T02:00:00.206221845Z"
+    created: "2019-09-09T07:29:17.763090805Z"
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: c58c9805f8212c86e2148669aa32798d3f77986892b1618e11dff859e07b1ebe
+    digest: 79e33265ac15cedf1c6976aa17f74deb9781871703201e0126938d06c29236e4
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -28,9 +28,9 @@ entries:
   consul-esm:
   - apiVersion: v1
     appVersion: 0.3.3
-    created: "2019-08-29T02:00:00.206590971Z"
+    created: "2019-09-09T07:29:17.763804622Z"
     description: Consul ESM for external service health checks in Consul
-    digest: fe37296830921599334b21d83a4ddd3ed6e57bc7d484ff5e13d1f311ac29f1fb
+    digest: b0d87e212bcf6897a606ce658002a79ae792fd31e1b45f2acf55d977c5c9322e
     home: https://github.com/hashicorp/consul-esm
     name: consul-esm
     urls:
@@ -39,9 +39,9 @@ entries:
   fluent-bit:
   - apiVersion: v1
     appVersion: 1.2.2
-    created: "2019-08-29T02:00:00.207456446Z"
+    created: "2019-09-09T07:29:17.76468487Z"
     description: Fast and Lightweight Log/Data Forwarder for Linux, BSD and OSX
-    digest: cd8d371e9d1fc1058ae4cb74b8236a6971a3e4a782384ecc5949b20282743770
+    digest: f5afad041cdbab4d0bd887cfda737751eec75c66313c7054dda782e166b3aa5f
     home: https://fluentbit.io
     icon: https://fluentbit.io/assets/img/logo1-default.png
     keywords:
@@ -65,9 +65,9 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-08-29T02:00:00.207787486Z"
+    created: "2019-09-09T07:29:17.764962634Z"
     description: gcloud Cron job
-    digest: d0af5d0b3d55933b344a68fcae750cb29afba466b220899925a893031acf74ff
+    digest: b1ca8e9bb272bfac3e838c39fde73fff7e8c998102ebfed581d6385db3507779
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
@@ -76,9 +76,9 @@ entries:
   kube-janitor:
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-08-29T02:00:00.208062729Z"
+    created: "2019-09-09T07:29:17.765244216Z"
     description: Cleans up Kubernetes resources on a configured TTL
-    digest: 53f7912cbf9c6457015e37b8bd6c163df9cc74aee82fa60095634cfae67299b1
+    digest: cb5c307c379578eae20a139d005f2587842caad14d470b467b7231a0da062224
     home: https://github.com/basisai/kube-janitor-helm
     name: kube-janitor
     sources:
@@ -89,10 +89,10 @@ entries:
     version: 1.0.3
   telegraf:
   - appVersion: "1.9"
-    created: "2019-08-29T02:00:00.208398173Z"
+    created: "2019-09-09T07:29:17.765598477Z"
     description: Telegraf is an agent written in Go for collecting, processing, aggregating,
       and writing metrics.
-    digest: 7c9f17b8bb007cdd6f57358581fe01ee9f86580db5d3a1427f444d5e7d9e0b90
+    digest: 2788a03be51908a8a134cdf0188ec718f146817db20b0eb454209470ecfef75e
     engine: gotpl
     home: https://www.influxdata.com/time-series-platform/telegraf/
     keywords:
@@ -107,9 +107,9 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2019-08-29T02:00:00.208956307Z"
+    created: "2019-09-09T07:29:17.766259594Z"
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: bcee1abc27cc18983dc63d608f79d3f9a7c22148d6e00d85fb726f4b8c67d58b
+    digest: d3a0aecd8a7d480e1d8a7dacef9d154fb8098569ad3edc95448117ee5bc645ee
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -122,4 +122,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.18.7.tgz
     version: 0.18.7
-generated: "2019-08-29T02:00:00.202171761Z"
+generated: "2019-09-09T07:29:17.759459289Z"
