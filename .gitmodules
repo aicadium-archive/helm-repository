@@ -24,3 +24,6 @@
 	path = charts/bulldozer-deployment
 	url = https://github.com/basisai/bulldozer-deployment
 	branch = master
+[submodule "charts/eks-container-insights"]
+	path = charts/eks-container-insights
+	url = https://github.com/basisai/charts
