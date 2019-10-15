@@ -27,3 +27,6 @@
 [submodule "charts/eks-container-insights"]
 	path = charts/eks-container-insights
 	url = https://github.com/basisai/charts
+[submodule "charts/gcp-billing-slack-notify"]
+	path = charts/gcp-billing-slack-notify
+	url = https://github.com/basisai/gcp-billing-slack-notify
