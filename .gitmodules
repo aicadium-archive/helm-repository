@@ -30,3 +30,6 @@
 [submodule "charts/gcp-billing-slack-notify"]
 	path = charts/gcp-billing-slack-notify
 	url = https://github.com/basisai/gcp-billing-slack-notify
+[submodule "charts/cert-manager-aio"]
+	path = charts/cert-manager-aio
+	url = https://github.com/basisai/charts
