@@ -3,9 +3,9 @@ entries:
   bulldozer-bot:
   - apiVersion: v1
     appVersion: 1.7.0
-    created: "2019-12-02T05:24:09.06494053Z"
+    created: "2019-12-26T08:05:24.644833032Z"
     description: A Helm chart for the Palantir bulldozer bot
-    digest: 5894786b1a3a68984ff3b453852aef170acc6729e30658a6e034fe12426a4d6a
+    digest: 0d73ce85da31ce5187cebfe5d60fbbdcd24515ad6c29d91c553f635024654d42
     name: bulldozer-bot
     urls:
     - https://charts.amoy.ai/bulldozer-bot-0.1.13.tgz
@@ -13,9 +13,9 @@ entries:
   cert-manager-aio:
   - apiVersion: v1
     appVersion: v0.12.0-beta.1
-    created: "2019-12-02T05:24:09.069080176Z"
+    created: "2019-12-26T08:05:24.648165032Z"
     description: cert-manager-aio with ACME solvers for GCP CloudDNS and Amazon Route53
-    digest: c92d1ce434c1c61a9b772d541155f5fe3699b239158d403e1eb0f244e95e9f42
+    digest: 28940049a9ed80b2a52b51183eb03ac039059ff6d24d4ebd316a694457107b0c
     home: https://github.com/jetstack/cert-manager
     name: cert-manager-aio
     urls:
@@ -23,9 +23,9 @@ entries:
     version: 1.0.1
   consul:
   - apiVersion: v1
-    created: "2019-12-02T05:24:09.070610046Z"
+    created: "2019-12-26T08:05:24.649378379Z"
     description: Install and configure Consul on Kubernetes.
-    digest: 45be6a48140ac1a1f2eaa02942c5009ee4cc0ce2b23ade8800295d4b0a359b48
+    digest: e6a36d885078af7653c7fd304279b01d9ac789f50a70c7d0b81959df6facfaf3
     home: https://www.consul.io
     name: consul
     sources:
@@ -38,9 +38,9 @@ entries:
   consul-backup-gcs:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-12-02T05:24:09.07092771Z"
+    created: "2019-12-26T08:05:24.649614472Z"
     description: Backup Consul Snapshots to GCS using credentials from Vault
-    digest: 35986895015f9483c6c0225d841d9c96afb17a3cbb7fa903e53f1dbac1106701
+    digest: b9097cadb40d37710747195b15fa041bd184dc2408f8f6f7adc9076ec1b00b7c
     home: https://github.com/basisai/consul-backup-gcs
     name: consul-backup-gcs
     urls:
@@ -49,20 +49,34 @@ entries:
   consul-esm:
   - apiVersion: v1
     appVersion: 0.3.3
-    created: "2019-12-02T05:24:09.07120243Z"
+    created: "2019-12-26T08:05:24.649836588Z"
     description: Consul ESM for external service health checks in Consul
-    digest: 594c3a254d6faf1ec5927468d5726916487c88d86ce285096d25cdde5fd8d6fb
+    digest: 5859a329c995a063f736f05f61906bca0a5fbf84747df0c2719c3c86dd85a0af
     home: https://github.com/hashicorp/consul-esm
     name: consul-esm
     urls:
     - https://charts.amoy.ai/consul-esm-0.1.0.tgz
     version: 0.1.0
+  default-psp:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-12-26T08:05:24.650017143Z"
+    description: Create a default PSP for everyone to use
+    digest: 1f8c9438d38cab1028f532301a3950590e68939a3184f4b60588ab7f877d60d0
+    engine: gotpl
+    home: https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+    keywords:
+    - psp
+    name: default-psp
+    urls:
+    - https://charts.amoy.ai/default-psp-0.1.0.tgz
+    version: 0.1.0
   eks-container-insights:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-12-02T05:24:09.071544559Z"
+    created: "2019-12-26T08:05:24.650241336Z"
     description: A Helm chart for EKS Container Insights
-    digest: 035957252697c1f95af65c094a57b48123372ee56ec641cf471ac7a16c478bec
+    digest: c14d31e0756c178f0b1a54feb6d61f43f0413dd292009dee12f5eec83089d8c8
     home: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-logs.html
     name: eks-container-insights
     urls:
@@ -71,9 +85,9 @@ entries:
   fluent-bit:
   - apiVersion: v1
     appVersion: 1.2.2
-    created: "2019-12-02T05:24:09.072530349Z"
+    created: "2019-12-26T08:05:24.650920728Z"
     description: Fast and Lightweight Log/Data Forwarder for Linux, BSD and OSX
-    digest: 053dae434574a697eed8e9681df4807c0e4f62cb849daec65523febbb36695e4
+    digest: ef47956b126464844cbf4c8376f89f1c4f8c1b6f3c5b0bb898287abdf4e0296d
     home: https://fluentbit.io
     icon: https://fluentbit.io/assets/img/logo1-default.png
     keywords:
@@ -97,9 +111,9 @@ entries:
   gcloud-cron:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2019-12-02T05:24:09.072822292Z"
+    created: "2019-12-26T08:05:24.651161209Z"
     description: gcloud Cron job
-    digest: 446b0494eea477bc40c3ccade3e7c6971b1d35f8a17fc0fc181e52f8f00cceb1
+    digest: c4a9e97626e6f3e3a99d2ccde907bce4faee2606f958d1268b529d4167552452
     home: https://github.com/basisai/gcloud-cron
     name: gcloud-cron
     urls:
@@ -108,9 +122,9 @@ entries:
   gcp-billing-slack-notify:
   - apiVersion: v1
     appVersion: 0.1.1
-    created: "2019-12-02T05:24:09.073100219Z"
+    created: "2019-12-26T08:05:24.65144594Z"
     description: Notifies via Slack of your GCP spending
-    digest: f70cb7c0e0a7e5d7dcc5217fbbc940db0a7d688c35e630a173e023303f133491
+    digest: 3b8c1ef0aa4be0970febcf9400b88fd54b149d715506a70d8c1f0268090666c7
     home: https://github.com/basisai/gcp-billing-slack-notify
     name: gcp-billing-slack-notify
     urls:
@@ -119,9 +133,9 @@ entries:
   kube-janitor:
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-12-02T05:24:09.07343074Z"
+    created: "2019-12-26T08:05:24.651697445Z"
     description: Cleans up Kubernetes resources on a configured TTL
-    digest: c8063193e5e05cb54f7b168143821884fe01e8ce8991c8c0469926dada6ccd68
+    digest: 559e91ef3bcbd8eca115a52078dbbf09fe148e5954acb2b7a3a2f84d3d4d7d09
     home: https://github.com/basisai/kube-janitor-helm
     name: kube-janitor
     sources:
@@ -132,10 +146,10 @@ entries:
     version: 1.0.3
   telegraf:
   - appVersion: "1.9"
-    created: "2019-12-02T05:24:09.073849381Z"
+    created: "2019-12-26T08:05:24.652464053Z"
     description: Telegraf is an agent written in Go for collecting, processing, aggregating,
       and writing metrics.
-    digest: 3e0982ad67de071a386795f8f04f1b618ba9f9c50f77e73e420e7555d2a79f33
+    digest: 4324af2eadd1d348756d9ae539949d4eb69dc45ef6fdec70b88c501189ee55df
     engine: gotpl
     home: https://www.influxdata.com/time-series-platform/telegraf/
     keywords:
@@ -150,9 +164,9 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2019-12-02T05:24:09.074619318Z"
+    created: "2019-12-26T08:05:24.653485708Z"
     description: A Helm chart for Vault, a tool for managing secrets
-    digest: 38bc6b54a8409f68898a877733c4fa36f39348371e21adae8dadda3a1b7caa7d
+    digest: dd20859be8b7f1277eec647a560e128e06abf091425595337c1907cb240fa932
     home: https://www.vaultproject.io/
     icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
     maintainers:
@@ -165,4 +179,4 @@ entries:
     urls:
     - https://charts.amoy.ai/vault-0.18.7.tgz
     version: 0.18.7
-generated: "2019-12-02T05:24:09.063770597Z"
+generated: "2019-12-26T08:05:24.643862967Z"
