@@ -12,6 +12,20 @@ entries:
     version: 0.1.13
   cert-manager-aio:
   - apiVersion: v1
+    appVersion: v0.14.2
+    created: "2020-04-23T06:38:34.550488273Z"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v0.14.2
+    description: cert-manager-aio with ACME solvers for GCP CloudDNS and Amazon Route53
+    digest: 90b9a015192db75175351a6bfe6b1c9d751b3a15c116ea9cb8ab9e78e683d2b9
+    home: https://github.com/jetstack/cert-manager
+    name: cert-manager-aio
+    urls:
+    - https://github.com/basisai/helm-repository/releases/download/cert-manager-aio-1.1.0/cert-manager-aio-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v1
     appVersion: v0.12.0-beta.1
     created: "2020-04-13T09:48:57.607998809Z"
     description: cert-manager-aio with ACME solvers for GCP CloudDNS and Amazon Route53
@@ -74,7 +88,6 @@ entries:
     created: "2020-04-13T09:48:57.610106301Z"
     description: Create a default PSP for everyone to use
     digest: 54223e4d781e246be0ac1c80f52755b618f59ab336d36943cda7d9dbd026fdcb
-    engine: gotpl
     home: https://kubernetes.io/docs/concepts/policy/pod-security-policy/
     keywords:
     - psp
@@ -161,7 +174,6 @@ entries:
     description: Telegraf is an agent written in Go for collecting, processing, aggregating,
       and writing metrics.
     digest: fe81214b638525d2a4d858d2a4002fd03ce91b5c95a1f9fa586f0c74cc87c2d5
-    engine: gotpl
     home: https://www.influxdata.com/time-series-platform/telegraf/
     keywords:
     - telegraf
