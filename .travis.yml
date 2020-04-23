@@ -1,0 +1,38 @@
+language: bash
+
+env:
+  global:
+    - HELM_VERSION="2.14.0"
+    - TARGET="gh-pages"
+    - DOMAIN=charts.amoy.ai
+    - REPO="https://${DOMAIN}"
+    - CHARTS="charts/consul charts/consul-backup-gcs/consul-backup-gcs charts/gcloud-cron/gcloud-cron charts/vault/incubator/vault charts/basisai/consul-esm charts/basisai/telegraf charts/fluent-bit/stable/fluent-bit charts/kube-janitor charts/bulldozer-deployment/bulldozer-bot charts/eks-container-insights/eks-container-insights charts/gcp-billing-slack-notify/gcp-billing-slack-notify charts/cert-manager-aio/cert-manager-aio charts/basisai/default-psp charts/basisai/cloudsql-proxy"
+
+install:
+  - wget -q "https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
+  - tar xzfv helm-v${HELM_VERSION}-linux-amd64.tar.gz
+  - PATH=`pwd`/linux-amd64/:$PATH
+  - helm init --client-only
+
+script:
+  - helm package ${CHARTS}
+  - helm repo index ./ --url "${REPO}"
+  - rm -rf charts .gitmodules linux-amd64 helm-v${HELM_VERSION}-linux-amd64.tar.gz
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  target-branch: "${TARGET}"
+  fqdn: ${DOMAIN}
+  committer-from-gh: true
+  github-token: $GITHUB_TOKEN  # Secure variable
+  keep-history: true
+  on:
+    branch: master
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
